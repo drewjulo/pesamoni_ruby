@@ -88,6 +88,13 @@ opts = {
   genericmsg: 'genericmsg_example', # String | Enter your user generated generic message for the requested transaction<p style=\"color:red\">This method applies for request methods <b>acreceive, acreceivekeac, acsend, acsendkeac, sendsms, sendairtime, pesab2c, sendsms, cardaccept</b></p>
   token: 'token_example', # String | Enter your user generated token for the above mentioned method<p style=\"color:red\">This method applies for request methods <b>acreceive, acreceivekeac, acsend, acsendkeac, sendsms, sendairtime, pesab2c, sendsms, cardaccept</b></p>
 }
+
+begin
+  result = api_instance.transactions_post(method, opts)
+  p result
+rescue  Pesamoni::ApiError => e
+  puts "Exception when calling DefaultApi->transactions_post: #{e}"
+end
 ```
 
 ### Accepting Card Payments e.g VISA/MASTERCARD
