@@ -29,7 +29,7 @@ You can register a new Pesamoni business account [Here](https://pesamoni.com/bus
 require 'pesamoni_ruby'
 
 # Setup authorization
-SwaggerClient.configure do |config|
+ Pesamoni.configure do |config|
   # Configure API key authorization: apipassword
   # Configure API key authorization: apiusername
   config.api_key['apiusername'] = 'YOUR API KEY'
@@ -40,7 +40,7 @@ SwaggerClient.configure do |config|
   #config.api_key_prefix['apipassword'] = 'Bearer'  
 end
 
-api_instance = SwaggerClient::DefaultApi.new
+api_instance =  Pesamoni::DefaultApi.new
 
 method = 'method_example' # String | Enter a request method. To check for request methods <a href=''>click here</a>
 
@@ -67,7 +67,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 ```
@@ -112,7 +112,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 
@@ -142,7 +142,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 ```
@@ -163,7 +163,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 ```
@@ -183,7 +183,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 
@@ -205,7 +205,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 
@@ -231,7 +231,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 ```
@@ -248,7 +248,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 ```
@@ -279,7 +279,7 @@ opts = {
 begin
   result = api_instance.transactions_post(method, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue  Pesamoni::ApiError => e
   puts "Exception when calling DefaultApi->transactions_post: #{e}"
 end
 ```
