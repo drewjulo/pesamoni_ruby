@@ -42,8 +42,6 @@ end
 
 api_instance =  Pesamoni::DefaultApi.new
 
-method = 'method_example' # String | Enter a request method. To check for request methods <a href=''>click here</a>
-
 ```
 
 ### Accepting funds from mobile subscriber
